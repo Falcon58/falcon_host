@@ -35,6 +35,7 @@
 	      <input type=\"password\" name=\"ret_password\" placeholder=\"Повторите пароль\" onFocus=\"Focus(this.name);\" onBlur=\"ComparePassword(reg_data);\"><span id=\"cpass_message_box\"></span><br />
 	      <input type=\"text\" name=\"email\" placeholder=\"Почта\" onFocus=\"Focus(this.name);\" onBlur=\"ToggleEmail(reg_data);\"><span id=\"email_message_box\"></span><br /><br />
 		  <img id=\"captcha_code\" /><br />
+		  <a id=\"captcha_text\" onclick=\"UpdateCaptcha();\">Мне не видно</a><br />
 		  <input type=\"text\" name=\"code\" placeholder=\"Код проверки\" onFocus=\"Focus(this.name);\" onBlur=\"ToggleCode(reg_data);\"><span id=\"code_message_box\"></span><br /><br /><br />
 	      <input id=\"ok_button\" type=\"button\" name=\"button\" value=\"Зарегистрироваться\" onclick=\"SaveData(reg_data);\" disabled>
 	     </form>

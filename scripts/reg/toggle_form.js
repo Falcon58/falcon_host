@@ -36,6 +36,14 @@ function Start()
 	  }
    }
 }
+function UpdateCaptcha()
+{
+   document.getElementById("ok_button").disabled = 1;
+   document.getElementById("captcha_code").src = "../scripts/reg/captcha.php?" + Math.random();
+   document.getElementById("code_message_box").innerHTML = "";
+   tCode = false;
+   
+}
 function ChangeTStatus(tValue)
 {
    switch(elementId)
