@@ -1,0 +1,29 @@
+body {
+    background-color: #E1E1E1;
+	margin: 10px;
+	font-family: Arial, Tahoma, Verdana;
+}
+div {
+    display: block;
+}
+a {
+    font-weight: bold;		
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #959595;
+}
+a:hover,
+a:active
+{
+    color: #959595;
+    text-decoration: underline;
+}
+ul li {
+   font-family: Arial, Tahoma, Verdana;
+   color: #7D7D7D;
+   font-weight: bold;
+   font-size: 14px;
+}
+#content {
+    width: 600px;
+}
