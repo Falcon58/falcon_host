@@ -49,7 +49,7 @@
    {
       if(is_dir(iconv("utf-8", "windows-1251", $DIR) . $value) && $value != "." && $value != "..")
 	  {
-	     $file = $value;
+	     $file = iconv("windows-1251", "utf-8", $value);
 	     echo "<div class='file'>
                 <a onClick=\"Next('$file/');\"><img src='http://falcon-host.ru/images/fm/folder.png' width='25' height='25' alt='Folder' align='center' />$file</a>
 	           </div>";
@@ -58,7 +58,7 @@
    //Выборка файлов из массива
    foreach($files as $value)
    {
-      if(!is_dir( $DIR . $value) && $value != "." && $value != ".." && $value != "index.php")
+      if(!is_dir(iconv("utf-8", "windows-1251", $DIR) . $value) && $value != "." && $value != ".." && $value != "index.php")
 	  {
 	     $file = iconv("windows-1251", "utf-8", $value);
 		 $name = NULL;
