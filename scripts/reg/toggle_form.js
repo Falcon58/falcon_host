@@ -264,3 +264,7 @@ function Test()
 	  document.getElementById("ok_button").disabled = 0;
    }
 }
+function refresh()
+{
+   location.href='http://falcon-host.ru/';
+}
